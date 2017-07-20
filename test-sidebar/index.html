@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Тестовое задание «Сайдбар»</title>
+  </head>
+  <body>
+
+    <div class="sidebar">
+      <form action="get" method="" class="sidebar-form">
+        <fieldset class="sidebar-form__data">
+          <input type="text" class="sidebar-form__text" placeholder="Текстовое поле" required>
+          <input type="password" class="sidebar-form__password" placeholder="********" required>
+          <label><input type="checkbox" class="sidebar-form__checkbox">Я согласен с пользовательским соглашением</label>
+        </fieldset>
+        <fieldset class="sidebar-form__btn">
+          <input type="submit" class="sidebar-form__send">
+          <input type="reset" class="sidebar-form__reset">
+        </fieldset>
+      </form>
+    </div>
+    <header class="page-header">
+      <!-- <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link">Знакомства</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link">Места</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link">Общение</a>
+            <ul class="main-nav__dropdown">
+
+            </ul>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link">Блог</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link">Новое</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link">Конкурсы</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link">О проекте</a>
+          </li>
+        </ul>
+      </nav> -->
+
+
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li><a href="#">Знакомства</a></li>
+              <li><a href="#">Места</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Общение <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Написать сообщение</a></li>
+                  <li><a href="#">Чаты</a></li>
+                  <li><a href="#">Симпатии</a></li>
+                  <li><a href="#">Опросы</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Блог</a></li>
+              <li><a href="#">Новое</a></li>
+              <li><a href="#">Конкурсы</a></li>
+              <li><a href="#">О проекте</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+
+    </header>
+    <main>
+
+      <div class="info-field">
+        <div class="info-row">
+          <div class="info-item">
+            <p class="info-item__text">Здесь краткое описание. Высота блока зависит отконтента, но не более 210пх. Количество таких элементов может быть любым.</p>
+          </div>
+          <div class="info-item">
+            <p class="info-item__text">Здесь краткое описание. Высота блока зависит отконтента, но не более 210пх. Количество таких элементов может быть любым.</p>
+          </div>
+          <div class="info-item">
+            <p class="info-item__text">Здесь краткое описание. Высота блока зависит от контента, но не более 210пх.</p>
+          </div>
+          <div class="info-item">
+            <p class="info-item__text">Здесь краткое описание. Высота блока зависит отконтента, но не более 210пх. Количество таких элементов может быть любым.</p>
+          </div>
+        </div>
+        <div class="info-row">
+          <div class="info-item">
+            <p class="info-item__text">Здесь краткое описание. Высота блока зависит отконтента, но не более 210пх. Количество таких элементов может быть любым.</p>
+          </div>
+          <div class="info-item">
+            <p class="info-item__text">Здесь краткое описание. Высота блока зависит от контента, но не более 210пх.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="paginator">
+        <ul class="paginator__list">
+          <li class="paginator__item"><a href="" class="paginator__number">1</a></li>
+          <li class="paginator__item"><a href="" class="paginator__number">2</a></li>
+          <li class="paginator__item"><a href="" class="paginator__number">3</a></li>
+        </ul>
+      </div>
+    </main>
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/jquery-3.2.1.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
