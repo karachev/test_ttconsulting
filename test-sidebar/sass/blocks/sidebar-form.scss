@@ -1,10 +1,21 @@
 .sidebar-form {
+  margin-top: 87px;
   &__data {
     border: none;
+    margin-left: 7px;
+  }
+
+  input {
+
   }
 
   &__text,
   &__password {
+    display: block;
+    width: 240px;
+    margin-top: 15px;
+    margin-right: 0px;
+    padding: 2px 9px;
     color: #cccccc;
     font-family: "Myriad Pro";
     font-size: 16px;
@@ -12,23 +23,61 @@
     line-height: 24px;
     background-color: #000000;
     border: 1px solid #cdcdcd;
-    margin: 10px;
+  }
+
+  &__checkbox {
+    margin-top: 20px;
+  }
+
+  input[type=checkbox] {
+    display: none;
+    position: relative;
+  }
+
+  &__checkbox + label:before {
+    position: absolute;
+    top: 2px;
+    left: -18px;
+    content: "";
+    display: block;
+    width: 13px;
+    height: 13px;
+    background-color: #cdcdcd;
+  }
+
+  &__checkbox:checked + label:before {
+    position: absolute;
+    top: 2px;
+    left: -18px;
+    content: "";
+    display: block;
+    width: 13px;
+    height: 13px;
+    background-color: #cdcdcd;
+    background-image: url(../img/check.png);
   }
 
   label {
+    position: relative;
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 18px;
     color: #cccccc;
     font-family: "Myriad Pro";
     font-size: 16px;
     font-weight: 400;
     line-height: 18px;
+    cursor: pointer;
   }
 
   &__btn {
+    margin-top: 2px;
+    margin-left: 7px;
     border: none;
   }
 
   &__send {
-    padding: 10px;
+    padding: 2px 9px;
     background-color: #ce1985;
     color: #cccccc;
     font-family: "Myriad Pro";
@@ -37,10 +86,12 @@
     line-height: 24px;
     border: none;
     outline: none;
+    cursor: pointer;
   }
 
   &__reset {
-    padding: 10px;
+    margin-left: 10px;
+    padding: 2px 9px;
     background-color: #192bce;
     color: #cccccc;
     font-family: "Myriad Pro";
@@ -49,5 +100,6 @@
     line-height: 24px;
     border: none;
     outline: none;
+    cursor: pointer;
   }
 }

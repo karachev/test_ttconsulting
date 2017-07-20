@@ -2,9 +2,13 @@
   display: inline-block;
   float: left;
   width: 140px;
+  max-height: 210px;
   margin: 10px;
   background-color: #d4c37b;
+
   &__text {
+    margin-top: 0px;
+    padding: 15px;
     color: #000000;
     font-family: "Myriad Pro";
     font-size: 15px;

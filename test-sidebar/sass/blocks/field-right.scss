@@ -1,5 +1,12 @@
 .field-right {
   float: left;
-  width: 960px;
+  width: 70%;
   background-color: #f6f2f2;
+}
+
+@media screen and (max-width: 960px) {
+  .field-right {
+    margin: auto;
+    width: 96%
+  }
 }

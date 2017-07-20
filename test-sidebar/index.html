@@ -2,72 +2,75 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <title>Тестовое задание «Сайдбар»</title>
   </head>
-  <body class="clearfix">
-    <div class="sidebar">
-      <form action="get" method="" class="sidebar-form">
-        <fieldset class="sidebar-form__data">
-          <input type="text" class="sidebar-form__text" placeholder="Текстовое поле" required>
-          <input type="password" class="sidebar-form__password" placeholder="********" required>
-          <input type="checkbox" id="agree" class="sidebar-form__checkbox"><label for="agree">Я согласен с пользовательским соглашением</label>
-        </fieldset>
-        <fieldset class="sidebar-form__btn">
-          <input type="submit" class="sidebar-form__send">
-          <input type="reset" class="sidebar-form__reset">
-        </fieldset>
-      </form>
-    </div>
-    <div class="field-right">
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Знакомства</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Места</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Общение<i class="fa fa-angle-down"></i></a>
-            <ul class="main-nav__submenu">
-              <li><a class="main-nav__link" href="#">Написать сообщение</a></li>
-              <li><a class="main-nav__link" href="#">Чаты</a></li>
-              <li><a class="main-nav__link" href="#">Симпатии</a></li>
-              <li><a class="main-nav__link" href="#">Опросы</a></li>
-            </ul>
-          </li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Блог</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Новое</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Конкурсы</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">О проекте</a></li>
-        </ul>
-      </nav>
-      <div class="info-field">
-        <div class="info-field__row clearfix">
-          <div class="info-item">
-            <p class="info-item__text">Здесь краткое описание. Высота блока зависит отконтента, но не более 210пх. Количество таких элементов может быть любым.</p>
-          </div>
-          <div class="info-item">
-            <p class="info-item__text">Здесь краткое описание. Высота блока зависит отконтента, но не более 210пх. Количество таких элементов может быть любым.</p>
-          </div>
-          <div class="info-item">
-            <p class="info-item__text">Здесь краткое описание. Высота блока зависит от контента, но не более 210пх.</p>
-          </div>
-          <div class="info-item">
-            <p class="info-item__text">Здесь краткое описание. Высота блока зависит отконтента, но не более 210пх. Количество таких элементов может быть любым.</p>
-          </div>
-        </div>
-        <div class="info-field__row clearfix">
-          <div class="info-item">
-            <p class="info-item__text">Здесь краткое описание. Высота блока зависит отконтента, но не более 210пх. Количество таких элементов может быть любым.</p>
-          </div>
-          <div class="info-item">
-            <p class="info-item__text">Здесь краткое описание. Высота блока зависит от контента, но не более 210пх.</p>
-          </div>
-        </div>
+  <body>
+    <div class="container clearfix">
+      <div class="sidebar">
+        <form action="get" method="" class="sidebar-form">
+          <fieldset class="sidebar-form__data">
+            <input type="text" class="sidebar-form__text" placeholder="Текстовое поле" required>
+            <input type="password" class="sidebar-form__password" placeholder="********" required>
+            <input type="checkbox" id="agree" class="sidebar-form__checkbox" checked><label for="agree">Я согласен с пользовательским соглашением</label>
+          </fieldset>
+          <fieldset class="sidebar-form__btn">
+            <input type="submit" class="sidebar-form__send">
+            <input type="reset" class="sidebar-form__reset">
+          </fieldset>
+        </form>
       </div>
-      <div class="paginator">
-        <ul class="paginator__list">
-          <li class="paginator__item"><a href="" class="paginator__number">1</a></li>
-          <li class="paginator__item"><a href="" class="paginator__number paginator__number--active">2</a></li>
-          <li class="paginator__item"><a href="" class="paginator__number">3</a></li>
-        </ul>
+      <div class="field-right">
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Знакомства</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Места</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Общение</a>
+              <ul class="main-nav__submenu">
+                <li><a class="main-nav__link" href="#">Написать сообщение</a></li>
+                <li><a class="main-nav__link" href="#">Чаты</a></li>
+                <li><a class="main-nav__link" href="#">Симпатии</a></li>
+                <li><a class="main-nav__link" href="#">Опросы</a></li>
+              </ul>
+            </li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Блог</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Новое</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Конкурсы</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">О проекте</a></li>
+          </ul>
+        </nav>
+        <div class="info-field">
+          <div class="info-field__row clearfix">
+            <div class="info-item">
+              <p class="info-item__text">Здесь краткое описание. Высота блока зависит отконтента, но не более 210пх. Количество таких элементов может быть любым.</p>
+            </div>
+            <div class="info-item">
+              <p class="info-item__text">Здесь краткое описание. Высота блока зависит отконтента, но не более 210пх. Количество таких элементов может быть любым.</p>
+            </div>
+            <div class="info-item">
+              <p class="info-item__text">Здесь краткое описание. Высота блока зависит от контента, но не более 210пх.</p>
+            </div>
+            <div class="info-item">
+              <p class="info-item__text">Здесь краткое описание. Высота блока зависит отконтента, но не более 210пх. Количество таких элементов может быть любым.</p>
+            </div>
+          </div>
+          <div class="info-field__row clearfix">
+            <div class="info-item">
+              <p class="info-item__text">Здесь краткое описание. Высота блока зависит отконтента, но не более 210пх. Количество таких элементов может быть любым.</p>
+            </div>
+            <div class="info-item">
+              <p class="info-item__text">Здесь краткое описание. Высота блока зависит от контента, но не более 210пх.</p>
+            </div>
+          </div>
+        </div>
+        <div class="paginator">
+          <ul class="paginator__list">
+            <li class="paginator__item"><a href="" class="paginator__number">1</a></li>
+            <li class="paginator__item"><a href="" class="paginator__number paginator__number--active">2</a></li>
+            <li class="paginator__item"><a href="" class="paginator__number">3</a></li>
+          </ul>
+        </div>
       </div>
     </div>
     <script src="js/script.js"></script>
