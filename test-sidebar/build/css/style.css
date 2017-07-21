@@ -117,13 +117,20 @@ body {
     list-style: none;
     margin: 0;
     padding: 0; }
-  .main-nav__list .main-nav__item {
+  .main-nav__item {
     display: inline-block;
     position: relative; }
-  .main-nav__list .main-nav__item:last-child {
-    margin-right: 0; }
-  .main-nav__item:hover {
-    background-color: #e9a9a9; }
+    .main-nav__item:last-child {
+      margin-right: 0; }
+    .main-nav__item:hover {
+      background-color: #e9a9a9; }
+      .main-nav__item:hover .main-nav__submenu {
+        display: block;
+        width: 145px; }
+    .main-nav__item--submenu {
+      list-style: none; }
+      .main-nav__item--submenu:hover {
+        background-color: #cccccc; }
   .main-nav__link {
     display: block;
     padding: 10px 13px;
@@ -136,9 +143,16 @@ body {
     line-height: 17px;
     text-transform: uppercase;
     -webkit-transition: .5s linear;
-    transition: .5s linear; }
+    transition: .5s linear;
+    color: #695753; }
     .main-nav__link--submenu {
-      padding: 10px 12px; }
+      padding: 10px 12px;
+      color: #040404;
+      font-family: "Myriad Pro";
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 24px;
+      text-transform: inherit; }
   .main-nav__submenu {
     position: absolute;
     top: 100%;
@@ -146,27 +160,10 @@ body {
     width: 100%;
     z-index: 10;
     -webkit-transition: 0.5s ease-in-out;
-    transition: 0.5s ease-in-out; }
-  .main-nav ul a {
-    color: #695753; }
-  .main-nav__submenu {
+    transition: 0.5s ease-in-out;
     display: none;
     background: #e9a9a9;
     padding: 0px; }
-  ul li:hover .main-nav__submenu {
-    display: block;
-    width: 145px; }
-  .main-nav__submenu li {
-    list-style: none; }
-  .main-nav__submenu li a {
-    color: #040404;
-    font-family: "Myriad Pro";
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 24px;
-    text-transform: inherit; }
-  .main-nav__submenu li:hover {
-    background-color: #cccccc; }
 
 .info-field {
   margin-top: 10px;
@@ -211,7 +208,8 @@ body {
 
 @font-face {
   font-family: 'Myriad Pro';
-  src: local("Myriad Pro"), url("../fonts/myriadpro-regular.otf") format("otf"); }
+  src: local("Myriad Pro"), url("../fonts/myriadpro-regular.otf") format("otf"), url("../fonts/myriadpro-regular.eot") format("eot"), url("../fonts/myriadpro-regular.ttf") format("ttf"), url("../fonts/myriadpro-regular.woff") format("woff");
+  font-weight: normal; }
 
 @media screen and (max-width: 960px) {
   .sidebar {

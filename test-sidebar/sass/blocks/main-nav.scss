@@ -5,23 +5,35 @@
   &__list {
     display: flex;
     justify-content: center;
-    list-style: none;
     margin: 0;
-
     padding: 0;
+    list-style: none;
   }
 
-  &__list &__item {
+  &__item {
     display: inline-block;
     position: relative;
-  }
 
-  &__list &__item:last-child {
-    margin-right: 0;
-  }
+    &:last-child {
+      margin-right: 0;
+    }
 
-  &__item:hover {
-    background-color: #e9a9a9;
+    &:hover {
+      background-color: #e9a9a9;
+
+      .main-nav__submenu {
+        display: block;
+        width: 145px;
+      }
+    }
+
+    &--submenu {
+      list-style: none;
+
+      &:hover {
+        background-color: #cccccc;
+      }
+    }
   }
 
   &__link {
@@ -37,8 +49,17 @@
     text-transform: uppercase;
     transition: .5s linear;
 
+    color: #695753;
+
     &--submenu {
       padding: 10px 12px;
+
+      color: #040404;
+      font-family: "Myriad Pro";
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 24px;
+      text-transform: inherit;
     }
   }
 
@@ -49,38 +70,9 @@
     width: 100%;
     z-index: 10;
     transition: 0.5s ease-in-out;
-  }
 
-  ul a {
-    color: #695753;
-  }
-
-  &__submenu {
     display: none;
     background: #e9a9a9;
     padding: 0px;
   }
-
-  ul li:hover &__submenu {
-    display: block;
-    width: 145px;
-  }
-
-  &__submenu li {
-    list-style: none;
-  }
-
-  &__submenu li a {
-    color: #040404;
-    font-family: "Myriad Pro";
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 24px;
-    text-transform: inherit;
-  }
-
-  &__submenu li:hover {
-    background-color: #cccccc;
-  }
 }
-
