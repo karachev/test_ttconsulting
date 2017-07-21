@@ -1,8 +1,9 @@
 .sidebar-form {
   margin-top: 87px;
+  padding-left: 7px;
+
   &__data {
     border: none;
-    margin-left: 7px;
   }
 
   input {
@@ -12,7 +13,7 @@
   &__text,
   &__password {
     display: block;
-    width: 240px;
+    width: 215px;
     margin-top: 15px;
     margin-right: 0px;
     padding: 2px 9px;
@@ -72,7 +73,6 @@
 
   &__btn {
     margin-top: 2px;
-    margin-left: 7px;
     border: none;
   }
 
