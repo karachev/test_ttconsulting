@@ -204,6 +204,8 @@ body {
   color: #040404; }
   .paginator__number--active {
     color: #d62020; }
+  .paginator__number:hover {
+    color: #ea7272; }
 
 @font-face {
   font-family: 'Myriad Pro';

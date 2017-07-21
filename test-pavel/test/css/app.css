@@ -11,8 +11,6 @@
 	width: 25%;
 	height: 200px;
 	padding: 5px;
-	text-align: center;
-
 }
 
 .block {
@@ -27,7 +25,6 @@
 	clear: both;
 }
 
-/*медиавыражения*/
 @media screen and (min-width: 1020px) {
 	.container {
 		margin: auto;
@@ -38,33 +35,27 @@
 @media screen and (min-width: 991px) {
 	.container {
 		width: 991px;
-		/*margin: auto;
-		margin-top: 1px;*/
 	}
 
 	.container__item {
-		width: 32%;
+		width: 32.3%;
 	}
 }
 
 @media screen and (max-width: 991px) {
 	.container__item {
-		width: 32%;
+		width: 32.3%;
 	}
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 990px) {
 	.container__item {
-		width: 48%;
+		width: 48.6%;
 	}
 }
 
-@media screen and (max-width: 516px) {
-	/*body{
-		overflow-x: auto;
-	}*/
+@media screen and (max-width: 744px) {
 	.container__item {
 		width: 98%;
 	}
 }
-
