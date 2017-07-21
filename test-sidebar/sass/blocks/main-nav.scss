@@ -36,6 +36,10 @@
     line-height: 17px;
     text-transform: uppercase;
     transition: .5s linear;
+
+    &--submenu {
+      padding: 10px 12px;
+    }
   }
 
   &__submenu {
@@ -59,7 +63,7 @@
 
   ul li:hover &__submenu {
     display: block;
-    width: 165px;
+    width: 145px;
   }
 
   &__submenu li {
@@ -69,7 +73,7 @@
   &__submenu li a {
     color: #040404;
     font-family: "Myriad Pro";
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     line-height: 24px;
     text-transform: inherit;
