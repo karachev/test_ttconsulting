@@ -1,12 +1,11 @@
 .main-nav {
-  width: 660px;
+  width: 100%;
   margin-top: 50px;
 
   &__list {
-    display: flex;
-    justify-content: center;
     margin: 0;
     padding: 0;
+    text-align: center;
     list-style: none;
   }
 
