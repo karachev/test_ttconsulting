@@ -1,6 +1,6 @@
 .info-item {
   display: inline-block;
-  float: left;
+  vertical-align: top;
   width: 140px;
   max-height: 210px;
   margin: 10px;
@@ -15,5 +15,32 @@
     font-size: 15px;
     font-weight: 400;
     line-height: 18px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .info-item {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .info-item {
+    /*width: 33.33%;*/
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .info-item {
+    /*width: 50%;*/
+    width: 45.6%;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .info-item {
+    /*width: 100%;*/
+    width: 95%;
   }
 }

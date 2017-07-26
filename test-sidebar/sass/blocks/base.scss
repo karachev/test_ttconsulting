@@ -9,3 +9,9 @@ body {
   display: block;
   clear: both;
 }
+
+@media screen and (max-width: 960px) {
+  body {
+    width: 100%;
+  }
+}
