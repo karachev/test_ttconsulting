@@ -15,7 +15,6 @@ var rename = require("gulp-rename");
 var run = require("run-sequence");
 var del = require("del");
 var concat = require('gulp-concat');
-var csscomb = require('gulp-csscomb');
 
 gulp.task("style", function() {
   gulp.src("sass/style.scss")
@@ -35,16 +34,6 @@ gulp.task("style", function() {
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
-
-// gulp.task("css", function() {
-//   return gulp.src('build/css/style.css')
-//     .pipe(csscomb(
-
-
-//       ))
-//     .pipe(rename("check.css"))
-//     .pipe(gulp.dest('/build/css'));
-// });
 
 gulp.task("clean", function() {
   return del("build");
@@ -94,6 +83,5 @@ gulp.task("serve", ["style"], function() {
 });
 
 gulp.task("build", function(fn) {
-  // run("clean", "copy", "style", "css", "images", "symbols", "serve", fn);
   run("clean", "copy", "style", "images", "symbols", "serve", fn);
 });
